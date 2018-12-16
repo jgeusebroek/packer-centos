@@ -28,7 +28,7 @@
     "ansible_update_os": "true",
     "ansible_install_packages": "",
     "ansible_unique_host_ssh_key": "true",
-    "ansible_configure_vagrant": "false",
+    "ansible_configure_vagrant": "true",
     "ansible_install_guest_tools": "true",
     "ansible_remove_build_tools": "true",
     "ansible_vmware_vm_tools": "dist",
