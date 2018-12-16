@@ -12,6 +12,7 @@ fi
 rm -rf /tmp/*
 
 # Cleanup packages
+yum -y autoremove
 yum -y --enablerepo='*' clean all
 
 # Remove Bash history
