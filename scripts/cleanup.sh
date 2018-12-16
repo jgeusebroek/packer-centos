@@ -6,6 +6,7 @@ if [[ $ANSIBLE_CLEANUP  =~ true || $ANSIBLE_CLEANUP =~ 1 || $ANSIBLE_CLEANUP =~ 
 
   # Delete Ansible leftovers in home directory
   rm -rf ~/.ansible*
+  rm -rf /home/vagrant/.ansible*
 fi
 
 # Clean temporary files
