@@ -1,0 +1,4 @@
+builds
+packer_cache
+environment.sh
+.vagrant
