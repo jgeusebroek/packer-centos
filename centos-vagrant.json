@@ -21,8 +21,8 @@
     "iso_name": "CentOS-7-x86_64-NetInstall-1810.iso",
     "iso_url": "http://ftp.nluug.nl/ftp/pub/os/Linux/distr/CentOS/7/isos/x86_64/CentOS-7-x86_64-NetInstall-1810.iso",
 
-    "ssh_password": "vagrant",
     "ssh_username": "vagrant",
+    "ssh_password": "vagrant",
 
     "ansible_cleanup": "true",
     "ansible_update_os": "true",
