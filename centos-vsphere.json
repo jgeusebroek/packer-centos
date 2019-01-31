@@ -43,7 +43,7 @@
     "ansible_vmware_vm_tools": "dist",
     "ansible_install_nfs": "false",
 
-    "whiteout": "false"
+    "whiteout": "true"
 
   },
   "sensitive-variables": ["vmware-password", "ssh_password"],
@@ -113,12 +113,7 @@
 
       "vmx_data_post": {
         "ethernet0.addressType": "generated",
-        "ethernet0.Address": "",
-        "ide1:0.startConnected": "FALSE",
-        "ide1:0.deviceType": "cdrom-raw",
-        "ide1:0.clientDevice": "TRUE",
-        "ide1:0.fileName": "emptyBackingString",
-        "ide1:0.present": "TRUE"
+        "ethernet0.Address": ""
       }
     }
 
