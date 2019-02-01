@@ -89,8 +89,8 @@
 
       "vnc_bind_address": "0.0.0.0",
       "vnc_disable_password": "true",
-      "vnc_port_min": 8080,
-      "vnc_port_max": 8080,
+      "vnc_port_min": 5900,
+      "vnc_port_max": 6000,
 
       "vmx_data": {
 
