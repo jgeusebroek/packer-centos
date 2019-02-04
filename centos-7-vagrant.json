@@ -2,6 +2,7 @@
   "_comment": "Build with `packer build -var-file=centos-7.json centos-vagrant.json`",
 
   "vm_name": "packer-centos-7-x86_64",
+  "centos_version": "7",
 
   "cpus": "4",
   "disk_size": "20480",

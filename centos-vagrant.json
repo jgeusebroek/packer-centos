@@ -3,6 +3,8 @@
 
     "vm_name": "packer-centos-7-x86_64",
 
+    "build_version": "",
+
     "vmware_guest_os_type": "centos-64",
     "vmware_tools_location": "/tmp/linux.iso",
     "vmware_tools_type": "distro",
@@ -162,11 +164,17 @@
     }
   ],
   "post-processors": [
-    {
+    [
+      {
       "type": "vagrant",
-      "compression_level": 6,
       "output": "./builds/{{.Provider}}/{{ user `vm_name` }}_{{.Provider}}.box"
-    }
+      },
+      {
+        "type": "vagrant-cloud",
+        "box_tag": "jgeusebroek/centos-{{user `centos_version`}}",
+        "version": "{{user `build_version`}}"
+        }
+    ]
   ]
 
 }
