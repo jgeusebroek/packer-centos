@@ -36,7 +36,7 @@
     "ansible_vmware_vm_tools": "dist",
     "ansible_install_nfs": "false",
 
-    "whiteout": "false"
+    "whiteout": "true"
 
   },
   "builders": [
