@@ -3,7 +3,7 @@
 ### Vagrant Virtualbox build example
 
 	packer build -only=virtualbox-iso --var 'build_version=1.0.0' \
-		-var-file=centos-7-vagrant.json centos-vagrant.json
+		-var-file=centos-8-vagrant.json centos-vagrant.json
 
 Vagrant boxes will be automaticly uploaded to [Vagrant Cloud](https://app.vagrantup.com/). This requires the `VAGRANT_CLOUD_TOKEN` environment variable to be set with a valid [authentication token](https://app.vagrantup.com/settings/security), otherwise the upload will fail.
 
@@ -12,7 +12,7 @@ Vagrant boxes will be automaticly uploaded to [Vagrant Cloud](https://app.vagran
 	cp vsphere_environment.sh.dist vsphere_environment.sh
 	edit vsphere_environment.sh
 	source vsphere_environment.sh
-	packer build --var 'whiteout=false' -var-file=centos-7.json centos-vsphere.json
+	packer build --var 'whiteout=false' -var-file=centos-8.json centos-vsphere.json
 
 #### Required environment variables
 
@@ -32,7 +32,7 @@ Vagrant boxes will be automaticly uploaded to [Vagrant Cloud](https://app.vagran
 	cp vsphere_environment.sh.dist vsphere_environment.sh
 	edit vsphere_environment.sh
 	source vsphere_environment.sh
-	packer build -var-file=centos-7.json centos-vsphere-native.json
+	packer build -var-file=centos-8.json centos-vsphere-native.json
 
 #### Required environment variables
 

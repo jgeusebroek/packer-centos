@@ -1,8 +1,15 @@
 #!/bin/bash -eux
 
+source /etc/os-release
+
 if [[ $ANSIBLE_CLEANUP  =~ true || $ANSIBLE_CLEANUP =~ 1 || $ANSIBLE_CLEANUP =~ yes ]]; then
+
   # Uninstall Ansible
-  yum -y remove ansible
+  if [[ $VERSION_ID > 7 ]]; then
+    pip3 uninstall --yes ansible
+  else
+    yum -y remove ansible
+  fi
 
   # Delete Ansible leftovers in home directory
   rm -rf ~/.ansible*
