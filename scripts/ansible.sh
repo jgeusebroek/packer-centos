@@ -14,7 +14,11 @@ if [[ $VERSION_ID > 7 ]]; then
 
 else
 
+  # Install Python.
+  yum -y install python2-pip
+
   # Install Ansible.
-  yum -y install ansible git
+  pip install ansible
+  yum -y install git
 
 fi

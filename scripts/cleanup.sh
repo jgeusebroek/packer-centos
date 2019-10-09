@@ -8,7 +8,7 @@ if [[ $ANSIBLE_CLEANUP  =~ true || $ANSIBLE_CLEANUP =~ 1 || $ANSIBLE_CLEANUP =~ 
   if [[ $VERSION_ID > 7 ]]; then
     pip3 uninstall --yes ansible
   else
-    yum -y remove ansible
+    pip uninstall --yes ansible
   fi
 
   # Delete Ansible leftovers in home directory
