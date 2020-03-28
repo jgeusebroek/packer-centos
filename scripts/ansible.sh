@@ -14,6 +14,9 @@ if [[ $VERSION_ID > 7 ]]; then
 
 else
 
+  # python2-pip requires epel
+  yum -y install epel-release
+
   # Install Python.
   yum -y install python2-pip
 
