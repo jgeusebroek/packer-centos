@@ -10,7 +10,6 @@
   "kickstart": "ks8.cfg",
 
   "iso_checksum": "7fea13202bf2f26989df4175aace8fdc16e1137f7961c33512cbfad844008948",
-  "iso_checksum_type": "sha256",
   "iso_name": "CentOS-8.1.1911-x86_64-boot.iso",
   "iso_url": "http://ftp.nluug.nl/ftp/pub/os/Linux/distr/CentOS/8/isos/x86_64/CentOS-8.1.1911-x86_64-boot.iso"
 }
